@@ -9,7 +9,7 @@ app.use(express.json())
 app.use('/api/', router)
 
 
-Mongoose.connect(`mongodb://127.0.0.1:27017/`, {
+Mongoose.connect(`mongodb://mongo:27017/`, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
 } as ConnectOptions)
