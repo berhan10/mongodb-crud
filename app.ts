@@ -9,7 +9,7 @@ app.use(express.json())
 app.use('/api/', router)
 
 
-Mongoose.connect(`mongodb://rydell-router-01:27017`, {
+Mongoose.connect(`mongodb://rydell-router-01:27017/database1`, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
 } as ConnectOptions)
